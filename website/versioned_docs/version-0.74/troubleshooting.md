@@ -1,6 +1,6 @@
 ---
 id: troubleshooting
-title: Troubleshooting
+title: Section 6 - Conclusion
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';

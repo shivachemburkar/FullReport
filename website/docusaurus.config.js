@@ -211,7 +211,7 @@ module.exports = {
       announcementBar: {
         id: 'reactconf2024',
         content:
-          'Back to Home <a target="_blank" rel="noopener noreferrer" href="https://www.carlsbadwatershed.org/">Return.</a>',
+          '<a target="_blank" rel="noopener noreferrer" href="https://www.carlsbadwatershed.org/">Return Home</a>',
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
@@ -233,9 +233,9 @@ module.exports = {
         ],
       },
       navbar: {
-        title: 'React Native',
+        title: 'MOE',
         logo: {
-          src: 'img/header_logo.svg',
+          src: 'img/logo.png',
           alt: 'React Native',
         },
         style: 'dark',
@@ -271,27 +271,23 @@ module.exports = {
           {
             type: 'doc',
             docId: 'overview',
-            label: 'Contributing',
+            label: 'Data Driven Results',
             position: 'right',
             docsPluginId: 'contributing',
           },
           {
             type: 'doc',
             docId: 'overview',
-            label: 'Community',
+            label: 'PDF Version',
             position: 'right',
             docsPluginId: 'community',
           },
           {
             to: '/showcase',
-            label: 'Showcase',
+            label: 'Projects',
             position: 'right',
           },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'right',
-          },
+
           {
             type: 'docsVersionDropdown',
             position: 'left',
@@ -303,12 +299,6 @@ module.exports = {
               },
             ],
           },
-          {
-            href: 'https://github.com/facebook/react-native',
-            'aria-label': 'GitHub repository',
-            position: 'right',
-            className: 'navbar-github-link',
-          },
         ],
       },
       image: 'img/logo-og.png',
@@ -316,23 +306,57 @@ module.exports = {
         style: 'dark',
         links: [
           {
-            title: 'Develop',
+            title: 'Previous Years',
             items: [
               {
-                label: 'Guides',
+                label: 'AR22',
                 to: 'docs/getting-started',
               },
               {
-                label: 'Components',
+                label: 'AR21',
                 to: 'docs/components-and-apis',
               },
               {
-                label: 'APIs',
+                label: 'AR20',
                 to: 'docs/accessibilityinfo',
               },
+            ],
+          },
+          {
+            title: 'Watershed Initiatives',
+            items: [
               {
-                label: 'Architecture',
-                to: 'architecture/overview',
+                label: 'Loma Alta Wetlands Enhancement Project',
+                to: 'showcase',
+              },
+              {
+                label: 'Agua Hedionda Creek Restoration Project',
+                href: 'https://reactnative.directory/',
+              },
+              {
+                label: 'Ultraviolet Bacteria Treatment Facility',
+                href: 'https://reactnative.directory/',
+              },
+              {
+                label: 'Spruce Street Channel Rehabilitation Project',
+                href: 'https://reactnative.directory/',
+              },
+            ],
+          },
+          {
+            title: 'Project Clean Water',
+            items: [
+              {
+                label: 'Pledge',
+                href: 'https://projectcleanwater.org/share-the-project-clean-water-52-week-pledge/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/projectcleanwatersd/',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/project-clean-water-sd/about/',
               },
             ],
           },
@@ -340,66 +364,28 @@ module.exports = {
             title: 'Participate',
             items: [
               {
-                label: 'Showcase',
-                to: 'showcase',
+                label: 'Disposal',
+                href: 'https://projectcleanwater.org/dude/',
               },
               {
-                label: 'Contributing',
-                to: 'contributing/overview',
+                label: 'Lifestyle',
+                href: 'https://projectcleanwater.org/trash-free/',
               },
               {
-                label: 'Community',
-                to: 'community/overview',
+                label: 'Pet Waste',
+                href: 'https://projectcleanwater.org/doody/',
               },
               {
-                label: 'Directory',
-                href: 'https://reactnative.directory/',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/react-native',
-              },
-            ],
-          },
-          {
-            title: 'Find us',
-            items: [
-              {
-                label: 'Blog',
-                to: 'blog',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/reactnative',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/react-native',
-              },
-            ],
-          },
-          {
-            title: 'Explore More',
-            items: [
-              {
-                label: 'ReactJS',
-                href: 'https://react.dev/',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://opensource.fb.com/legal/privacy/',
-              },
-              {
-                label: 'Terms of Service',
-                href: 'https://opensource.fb.com/legal/terms/',
+                label: 'Irrigation',
+                href: 'https://projectcleanwater.org/irrigation/',
               },
             ],
           },
         ],
         logo: {
-          alt: 'Meta Open Source Logo',
-          src: 'img/oss_logo.svg',
-          href: 'https://opensource.fb.com/',
+          alt: 'Return Home',
+          src: 'img/logo.png',
+          href: 'https://www.carlsbadwatershed.org',
         },
         copyright,
       },
@@ -409,17 +395,17 @@ module.exports = {
         indexName: 'react-native-v2',
         contextualSearch: true,
       },
-      metadata: [
-        {
-          property: 'og:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
-        },
-        {name: 'twitter:card', content: 'summary_large_image'},
-        {
-          name: 'twitter:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
-        },
-        {name: 'twitter:site', content: '@reactnative'},
-      ],
+      // metadata: [
+      //   {
+      //     property: 'og:image',
+      //     content: 'https://reactnative.dev/img/logo-og.png',
+      //   },
+      //   {name: 'twitter:card', content: 'summary_large_image'},
+      //   {
+      //     name: 'twitter:image',
+      //     content: 'https://reactnative.dev/img/logo-og.png',
+      //   },
+      //   {name: 'twitter:site', content: '@reactnative'},
+      // ],
     }),
 };

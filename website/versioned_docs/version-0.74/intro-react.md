@@ -1,6 +1,6 @@
 ---
 id: intro-react
-title: React Fundamentals
+title: Section 2 - Water Quality Conditions
 description: To understand React Native fully, you need a solid foundation in React. This short introduction to React can help you get started or get refreshed.
 ---
 

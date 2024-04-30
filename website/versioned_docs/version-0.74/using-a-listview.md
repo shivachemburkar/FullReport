@@ -1,6 +1,6 @@
 ---
 id: using-a-listview
-title: Using List Views
+title: Section 5 - Adaptive Management
 ---
 
 React Native provides a suite of components for presenting lists of data. Generally, you'll want to use either [FlatList](flatlist.md) or [SectionList](sectionlist.md).
