@@ -13,70 +13,11 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import con
 
 Many different kinds of people use React Native: from advanced iOS developers to React beginners, to people getting started programming for the first time in their career. These docs were written for all learners, no matter their experience level or background.
 
-## How to use these docs
+## How to use this Website
 
-You can start here and read through these docs linearly like a book; or you can read the specific sections you need. Already familiar with React? You can skip [that section](intro-react)—or read it for a light refresher.
+You can start here and read through the entire Carlsbad Watershed Management Area Water Quality Improvement Plan Report for the 2023 fiscal year docs linearly like a book. You can also just skip to the specific sections you need using the sidebar on the left.
 
-## Prerequisites
-
-To work with React Native, you will need to have an understanding of JavaScript fundamentals. If you’re new to JavaScript or need a refresher, you can [dive in](https://developer.mozilla.org/en-US/docs/Web/JavaScript) or [brush up](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) at Mozilla Developer Network.
-
-> While we do our best to assume no prior knowledge of React, Android, or iOS development, these are valuable topics of study for the aspiring React Native developer. Where sensible, we have linked to resources and articles that go more in depth.
-
-## Interactive examples
-
-This introduction lets you get started immediately in your browser with interactive examples like this one:
-
-```SnackPlayer name=Hello%20World
-import React from 'react';
-import {Text, View} from 'react-native';
-
-const YourApp = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Try editing me! 🎉</Text>
-    </View>
-  );
-};
-
-export default YourApp;
-```
-
-The above is a Snack Player. It’s a handy tool created by Expo to embed and run React Native projects and share how they render in platforms like Android and iOS. The code is live and editable, so you can play directly with it in your browser. Go ahead and try changing the "Try editing me!" text above to "Hello, world!"
-
-> Optionally, if you want to setup a local development environment, [you can follow our guide to setting up your environment on your local machine](environment-setup) and paste the code examples into your `App.js` file there. (If you are a web developer, you may already have a local environment set up for mobile browser testing!)
-
-## Developer Notes
-
-People from many different development backgrounds are learning React Native. You may have experience with a range of technologies, from web to Android to iOS and more. We try to write for developers from all backgrounds. Sometimes we provide explanations specific to one platform or another like so:
-
-<Tabs groupId="guide" queryString defaultValue="web" values={constants.getDevNotesTabs(["android","ios","web"])}>
-
-<TabItem value="android">
-
-> Android developers may be familiar with this concept.
-
-</TabItem>
-<TabItem value="ios">
-
-> iOS developers may be familiar with this concept.
-
-</TabItem>
-<TabItem value="web">
-
-> Web developers may be familiar with this concept.
-
-</TabItem>
-</Tabs>
-
-## Formatting
-
-Menu paths are written in bold and use carets to navigate submenus. Example: **Android Studio > Preferences**
+> While we do our best to improve the reading experience of this report, you can access the full report pdf [here](https://projectcleanwater.org/download/carlsbad-wma-wqip-updated-2021/).
 
 ---
 

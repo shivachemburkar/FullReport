@@ -211,7 +211,7 @@ module.exports = {
       announcementBar: {
         id: 'reactconf2024',
         content:
-          'Join us for React Conf on May 15-16. <a target="_blank" rel="noopener noreferrer" href="https://conf.react.dev/">Learn More.</a>',
+          'Back to Home <a target="_blank" rel="noopener noreferrer" href="https://www.carlsbadwatershed.org/">Return.</a>',
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
@@ -241,27 +241,27 @@ module.exports = {
         style: 'dark',
         items: [
           {
-            label: 'Development',
+            label: 'Carlsbad WMA',
             type: 'dropdown',
             position: 'right',
             items: [
               {
-                label: 'Guides',
+                label: 'WQIP AR23 Report Breakdown',
                 type: 'doc',
                 docId: 'getting-started',
               },
               {
-                label: 'Components',
+                label: 'Attachments',
                 type: 'doc',
                 docId: 'components-and-apis',
               },
               {
-                label: 'APIs',
+                label: 'Appendices',
                 type: 'doc',
                 docId: 'accessibilityinfo',
               },
               {
-                label: 'Architecture',
+                label: 'PDF Version',
                 type: 'doc',
                 docId: 'architecture-overview',
                 docsPluginId: 'architecture',
