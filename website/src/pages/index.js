@@ -115,15 +115,9 @@ function HomeCallToAction() {
     <>
       <ActionButton
         type="primary"
-        href={useBaseUrl('docs/environment-setup')}
-        target="_self">
-        Get started
-      </ActionButton>
-      <ActionButton
-        type="secondary"
         href={useBaseUrl('docs/getting-started')}
         target="_self">
-        Learn the basics
+        Read now
       </ActionButton>
     </>
   );
@@ -270,8 +264,8 @@ function HeaderHero() {
         columnOne={<LogoAnimation />}
         columnTwo={
           <>
-            <h1 className="title">React Native</h1>
-            <p className="tagline">Learn once, write&nbsp;anywhere.</p>
+            <h1 className="title">WQIP Annual Report 2023</h1>
+            {/* <p className="tagline">Learn once, write&nbsp;anywhere.</p> */}
             <div className="buttons">
               <HomeCallToAction />
             </div>

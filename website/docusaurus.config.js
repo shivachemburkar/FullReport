@@ -387,7 +387,6 @@ module.exports = {
           src: 'img/logo.png',
           href: 'https://www.carlsbadwatershed.org',
         },
-        copyright,
       },
       algolia: {
         appId: '8TDSE0OHGQ',

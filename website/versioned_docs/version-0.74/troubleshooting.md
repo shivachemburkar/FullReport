@@ -5,148 +5,36 @@ title: Section 6 - Conclusion
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
 
-These are some common issues you may run into while setting up React Native. If you encounter something that is not listed here, try [searching for the issue in GitHub](https://github.com/facebook/react-native/issues/).
+# Section 6: Conclusion
 
-### Port already in use
+## Conclusions
 
-The [Metro bundler][metro] runs on port 8081. If another process is already using that port, you can either terminate that process, or change the port that the bundler uses.
+RAs successfully implemented the WQIP during the reporting period through collaborative and proactive
+efforts on the regional, watershed, and jurisdictional levels. Successful programmatic and water quality
+outcomes achieved in FY23 helped to protect, preserve, enhance, and restore water quality and
+designated beneficial uses of waterways within the WMA. Through these efforts many interim goals were
+achieved and significant progress towards final numeric goals were achieved.
 
-#### Terminating a process on port 8081
+The RAs will continue to implement strategies and make program adjustments to maintain progress in
+achieving interim and final goals. In FY24, several RAs will be continuing adaptive management processes
+to evaluate HPWQCs and numeric goals in several HAs. These RAs will coordinate with RWQCB staff and
+provide rationale and updated numeric goals to the RWQCB for approval before implementation.
 
-Run the following command to find the id for the process that is listening on port 8081:
+Dry and wet weather MS4 outfall monitoring for the 2022-2023 monitoring year provided data and
+information regarding MS4 water quality conditions (see Attachment 3). During the reporting period, 810
+dry weather MS4 visual observations were performed, and a total of 33% of the 483 major MS4 outfalls
+were classified as dry (i.e., dry for three consecutive site visits).
 
-```shell
-sudo lsof -i :8081
-```
+During dry weather sampling, all results for the dissolved fractions of hexavalent chromium, trivalent
+chromium, iron, lead, silver, and zinc were below the NAL in 100% of the analytical samples. During wet
+weather outfall sampling, 75% of the results met applicable action levels. Parameters below SALs include
+total cadmium, total copper, total lead, total zinc, and turbidity.
 
-Then run the following to terminate the process:
+During FY23, RAs collaborated to implement the WQIP and address commentsfrom the RWQCB. A revised
+WQIP was submitted in September 2021 and accepted by the RWQCB in December 2021. The RAs are
+committed to continuing JRMP and WQIP implementation in FY24 and working collaboratively to improve
+water quality throughout the Carlsbad WMA.
 
-```shell
-kill -9 <PID>
-```
-
-On Windows you can find the process using port 8081 using [Resource Monitor](https://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows) and stop it using Task Manager.
-
-#### Using a port other than 8081
-
-You can configure the bundler to use a port other than 8081 by using the `port` parameter, from the root of your project run:
-
-<Tabs groupId="package-manager" queryString defaultValue={constants.defaultPackageManager} values={constants.packageManagers}>
-<TabItem value="npm">
-
-```shell
-npm start -- --port=8088
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```shell
-yarn start --port 8088
-```
-
-</TabItem>
-</Tabs>
-
-You will also need to update your applications to load the JavaScript bundle from the new port. If running on device from Xcode, you can do this by updating occurrences of `8081` to your chosen port in the `ios/__App_Name__.xcodeproj/project.pbxproj` file.
-
-### NPM locking error
-
-If you encounter an error such as `npm WARN locking Error: EACCES` while using the React Native CLI, try running the following:
-
-```shell
-sudo chown -R $USER ~/.npm
-sudo chown -R $USER /usr/local/lib/node_modules
-```
-
-### Missing libraries for React
-
-If you added React Native manually to your project, make sure you have included all the relevant dependencies that you are using, like `RCTText.xcodeproj`, `RCTImage.xcodeproj`. Next, the binaries built by these dependencies have to be linked to your app binary. Use the `Linked Frameworks and Binaries` section in the Xcode project settings. More detailed steps are here: [Linking Libraries](linking-libraries-ios.md#content).
-
-If you are using CocoaPods, verify that you have added React along with the subspecs to the `Podfile`. For example, if you were using the `<Text />`, `<Image />` and `fetch()` APIs, you would need to add these in your `Podfile`:
-
-```
-pod 'React', :path => '../node_modules/react-native', :subspecs => [
-  'RCTText',
-  'RCTImage',
-  'RCTNetwork',
-  'RCTWebSocket',
-]
-```
-
-Next, make sure you have run `pod install` and that a `Pods/` directory has been created in your project with React installed. CocoaPods will instruct you to use the generated `.xcworkspace` file henceforth to be able to use these installed dependencies.
-
-#### React Native does not compile when being used as a CocoaPod
-
-There is a CocoaPods plugin called [cocoapods-fix-react-native](https://github.com/orta/cocoapods-fix-react-native) which handles any potential post-fixing of the source code due to differences when using a dependency manager.
-
-#### Argument list too long: recursive header expansion failed
-
-In the project's build settings, `User Search Header Paths` and `Header Search Paths` are two configs that specify where Xcode should look for `#import` header files specified in the code. For Pods, CocoaPods uses a default array of specific folders to look in. Verify that this particular config is not overwritten, and that none of the folders configured are too large. If one of the folders is a large folder, Xcode will attempt to recursively search the entire directory and throw above error at some point.
-
-To revert the `User Search Header Paths` and `Header Search Paths` build settings to their defaults set by CocoaPods - select the entry in the Build Settings panel, and hit delete. It will remove the custom override and return to the CocoaPod defaults.
-
-### No transports available
-
-React Native implements a polyfill for WebSockets. These [polyfills](https://github.com/facebook/react-native/blob/main/packages/react-native/Libraries/Core/InitializeCore.js) are initialized as part of the react-native module that you include in your application through `import React from 'react'`. If you load another module that requires WebSockets, such as [Firebase](https://github.com/facebook/react-native/issues/3645), be sure to load/require it after react-native:
-
-```
-import React from 'react';
-import Firebase from 'firebase';
-```
-
-## Shell Command Unresponsive Exception
-
-If you encounter a ShellCommandUnresponsiveException exception such as:
-
-```
-Execution failed for task ':app:installDebug'.
-  com.android.builder.testing.api.DeviceException: com.android.ddmlib.ShellCommandUnresponsiveException
-```
-
-Try [downgrading your Gradle version to 1.2.3](https://github.com/facebook/react-native/issues/2720) in `android/build.gradle`.
-
-## react-native init hangs
-
-If you run into issues where running `npx react-native init` hangs in your system, try running it again in verbose mode and referring to [#2797](https://github.com/facebook/react-native/issues/2797) for common causes:
-
-```shell
-npx react-native init --verbose
-```
-
-When you're debugging a process or need to know a little more about the error being thrown, you may want to use the verbose option to output more logs and information to nail down your issue.
-
-Run the following command in your project's root directory.
-
-<Tabs groupId="package-manager" queryString defaultValue={constants.defaultPackageManager} values={constants.packageManagers}>
-<TabItem value="npm">
-
-```shell
-npm run android -- --verbose
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```shell
-yarn android --verbose
-```
-
-</TabItem>
-</Tabs>
-
-## Unable to start react-native package manager (on Linux)
-
-### Case 1: Error "code":"ENOSPC","errno":"ENOSPC"
-
-Issue caused by the number of directories [inotify](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers) (used by watchman on Linux) can monitor. To solve it, run this command in your terminal window
-
-```shell
-echo fs.inotify.max_user_watches=582222 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-### Error: spawnSync ./gradlew EACCES
-
-If you run into issue where executing `npm run android` or `yarn android` on macOS throws the above error, try to run `sudo chmod +x android/gradlew` command to make `gradlew` files into executable.
-
-[metro]: https://metrobundler.dev/
+As the MS4 Permit reissuance continues, it is recommended that the CWMA RAs continue their history of
+engagement with RWQCB staff and in the region to work towards streamlined reporting efforts and
+meaningful program planning, implementation, and reporting.
