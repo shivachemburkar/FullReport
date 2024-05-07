@@ -119,7 +119,6 @@
   },
   "api": {
     "APIs": [
-      "accessibilityinfo",
       "alert",
       "animated",
       "animatedvalue",

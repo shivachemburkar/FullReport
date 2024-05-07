@@ -288,17 +288,17 @@ module.exports = {
             position: 'right',
           },
 
-          {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            dropdownActiveClassDisabled: true,
-            dropdownItemsAfter: [
-              {
-                to: '/versions',
-                label: 'All versions',
-              },
-            ],
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'left',
+          //   dropdownActiveClassDisabled: true,
+          //   // dropdownItemsAfter: [
+          //   //   {
+          //   //     to: '/versions',
+          //   //     label: 'All versions',
+          //   //   },
+          //   // ],
+          // },
         ],
       },
       image: 'img/logo-og.png',

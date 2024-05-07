@@ -11,7 +11,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import con
   <img className="content-banner-img" src="/docs/assets/p_android-ios-devices.svg" alt=" " />
 </div>
 
-Many different kinds of people use React Native: from advanced iOS developers to React beginners, to people getting started programming for the first time in their career. These docs were written for all learners, no matter their experience level or background.
+asdf asdf **_asdf_**
 
 ## How to use this Website
 
