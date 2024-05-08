@@ -260,12 +260,6 @@ module.exports = {
                 type: 'doc',
                 docId: 'accessibilityinfo',
               },
-              {
-                label: 'PDF Version',
-                type: 'doc',
-                docId: 'architecture-overview',
-                docsPluginId: 'architecture',
-              },
             ],
           },
           {
