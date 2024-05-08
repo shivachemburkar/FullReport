@@ -568,15 +568,7 @@ const Index = () => {
       description="A framework for building native apps using React"
       wrapperClassName="homepage">
       <Head>
-        <title>React Native · Learn once, write anywhere</title>
-        <meta
-          property="og:title"
-          content="React Native · Learn once, write anywhere"
-        />
-        <meta
-          property="twitter:title"
-          content="React Native · Learn once, write anywhere"
-        />
+        <title>CWMA'23 WQIP</title>
       </Head>
       <HeaderHero />
       <NativeApps />

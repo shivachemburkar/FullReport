@@ -24,11 +24,11 @@ const isDeployPreview = process.env.PREVIEW_DEPLOY === 'true';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'React Native',
+  title: 'CWMA 2023 WQIP Report',
   tagline: 'A framework for building native apps using React',
-  organizationName: 'facebook',
-  projectName: 'react-native',
-  url: 'https://reactnative.dev',
+  organizationName: 'MOE',
+  projectName: 'wqip',
+  url: 'https://report.ogawa.us/',
   baseUrl: '/',
   clientModules: [
     require.resolve('./modules/snackPlayerInitializer.js'),
