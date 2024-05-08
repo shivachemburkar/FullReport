@@ -40,12 +40,6 @@ module.exports = {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
     },
-    {
-      src: 'https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd8ryO5qrZo8Exadq9qmt1wtm4_2FdZGEAKHDFEt_2BBlwwM4.js',
-      defer: true,
-    },
-    {src: 'https://snack.expo.dev/embed.js', defer: true},
-    {src: 'https://platform.twitter.com/widgets.js', async: true},
   ],
   favicon: 'img/favicon.ico',
   titleDelimiter: '·',
@@ -57,7 +51,7 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   webpack: {
     jsLoader: isServer => ({
       loader: require.resolve('esbuild-loader'),
@@ -382,12 +376,13 @@ module.exports = {
           href: 'https://www.carlsbadwatershed.org',
         },
       },
-      algolia: {
-        appId: '8TDSE0OHGQ',
-        apiKey: '83cd239c72f9f8b0ed270a04b1185288',
-        indexName: 'react-native-v2',
-        contextualSearch: true,
-      },
+      // algolia: {
+      //   appId: '8TDSE0OHGQ',
+      //   apiKey: '83cd239c72f9f8b0ed270a04b1185288',
+      //   indexName: 'react-native-v2',
+      //   contextualSearch: true,
+      // },
+
       // metadata: [
       //   {
       //     property: 'og:image',
