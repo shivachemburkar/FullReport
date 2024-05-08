@@ -1,6 +1,6 @@
 ---
-id: handling-text-input
-title: Handling Text Input
+id: water-improvement-goals
+title: Water Quality Improvement Goals
 ---
 
 [`TextInput`](textinput#content) is a [Core Component](intro-react-native-components) that allows the user to enter text. It has an `onChangeText` prop that takes a function to be called every time the text changed, and an `onSubmitEditing` prop that takes a function to be called when the text is submitted.

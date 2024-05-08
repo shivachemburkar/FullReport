@@ -55,21 +55,21 @@ export default function DocItemFooter() {
     return null;
   }
 
-  return (
-    <>
-      <DocsRating label={metadata.unversionedId} />
-      <footer
-        className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
-        {canDisplayTagsRow && <TagsRow tags={tags} />}
-        {canDisplayEditMetaRow && (
-          <EditMetaRow
-            editUrl={editUrl}
-            lastUpdatedAt={lastUpdatedAt}
-            lastUpdatedBy={lastUpdatedBy}
-            formattedLastUpdatedAt={formattedLastUpdatedAt}
-          />
-        )}
-      </footer>
-    </>
-  );
+  // return (
+  //   <>
+  //     <DocsRating label={metadata.unversionedId} />
+  //     <footer
+  //       className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
+  //       {canDisplayTagsRow && <TagsRow tags={tags} />}
+  //       {canDisplayEditMetaRow && (
+  //         <EditMetaRow
+  //           editUrl={editUrl}
+  //           lastUpdatedAt={lastUpdatedAt}
+  //           lastUpdatedBy={lastUpdatedBy}
+  //           formattedLastUpdatedAt={formattedLastUpdatedAt}
+  //         />
+  //       )}
+  //     </footer>
+  //   </>
+  // );
 }

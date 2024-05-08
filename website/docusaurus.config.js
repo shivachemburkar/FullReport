@@ -248,7 +248,7 @@ module.exports = {
               {
                 label: 'WQIP AR23 Report Breakdown',
                 type: 'doc',
-                docId: 'getting-started',
+                docId: 'overview',
               },
               {
                 label: 'Attachments',

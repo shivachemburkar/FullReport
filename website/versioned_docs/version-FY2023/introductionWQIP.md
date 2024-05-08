@@ -1,6 +1,6 @@
 ---
-id: intro-react-native-components
-title: Core Components and Native Components
+id: introduction
+title: Introduction
 description: 'React Native lets you compose app interfaces using Native Components. Conveniently, it comes with a set of these components for you to get started with right now—the Core Components!'
 ---
 

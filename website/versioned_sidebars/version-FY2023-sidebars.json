@@ -1,15 +1,14 @@
 {
   "docs": {
     "Full CWMA AY23 WQIP Report": [
-      "getting-started",
-      "intro-react-native-components",
-      "intro-react",
-      "handling-text-input",
-      "using-a-scrollview",
-      "using-a-listview",
-      "troubleshooting",
-      "platform-specific-code",
-      "more-resources"
+      "overview",
+      "introduction",
+      "water-quality-conditions",
+      "water-improvement-goals",
+      "water-quality-assessment-program",
+      "adaptive-management",
+      "conclusion",
+      "references"
     ],
 
     "UI & Interaction": [
